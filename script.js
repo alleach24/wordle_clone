@@ -8,6 +8,8 @@ let rightGuessString = WORDS[Math.floor(Math.random() * WORDS.length)]
 
 console.log(rightGuessString)
 
+
+
 function initBoard() {
     let board = document.getElementById("game-board");
 
@@ -24,6 +26,8 @@ function initBoard() {
         board.appendChild(row)
     }
 }
+
+
 
 document.addEventListener("keyup", (e) => {
 
@@ -49,6 +53,8 @@ document.addEventListener("keyup", (e) => {
         insertLetter(pressedKey)
     }
 })
+
+
 
 function insertLetter(pressedKey) {
     if (nextLetter === 5) {
